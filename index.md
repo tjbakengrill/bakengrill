@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Bakery and Cafeteria"
+image:
+    - 'assets/img/01.jpg'
+    - 'assets/img/02.jpg'
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.

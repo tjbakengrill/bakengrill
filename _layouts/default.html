@@ -3,10 +3,31 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    
   </head>
   <body>
     {{ content }}
+
+    <div class="background">
+      <div class="bgcarousel">
+        {% for image in page.image %}
+        <div>
+          <div class="bgimg" style='background-image: url({{ page.image[forloop.index0] }})'></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="main">
+      <span class="webdev">NEON</span>
+      <span class="socod">TEXT EFFECT</span>
+    </div>
+
+    <script src="{{ "/assets/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/slick.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   </body>
 </html>
