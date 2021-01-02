@@ -5,6 +5,7 @@ $(document).ready(function(){
         fade: true,
         infinite: true,
         speed: 1500,
+        autoplaySpeed: 6000,
         autoplay: true
     });
 })

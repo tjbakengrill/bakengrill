@@ -1,3 +1,7 @@
+body{
+    font-family: 'Arvo', serif;
+}
+
 .bgcarousel{
     position: fixed;
     top: 0;
@@ -30,4 +34,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1{
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 6em;
+        color: #ef4f4f;
+        animation: background 40s linear infinite;  
+        background: linear-gradient(90deg, #ef4f4f 0%,#d13535 10%, #ef4f4f 20%,#d13535 30%, #ef4f4f 40%,#d13535 50%, #ef4f4f 60%,#d13535 70%, #ef4f4f 80%,#d13535 90%, #ef4f4f 100%);
+        background-size: 1000% 100%;        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p{
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 2em;
+        color: #333;
+    }
+    a{
+        padding: 10px 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 2px solid #ef4f4f;
+        color: #333;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: all ease .2s;
+        text-decoration: none;
+        &:hover{
+            background: #ef4f4f;
+            color: #fff;
+        }
+    }
 }
+
+@keyframes background {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+  }
+
+.social{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 30px 15px;
+    text-align: center;
+    a{
+        margin: 0 10px;
+    }
+    img{
+        height: 25px;
+    }
+}
+

@@ -3,7 +3,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ site.title }} - {{ page.title }}</title>
+    <title>{{ site.title }} - {{ page.subtitle }}</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+      </style>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
     
@@ -22,12 +26,20 @@
     </div>
 
     <div class="content">
-      <h1>Bake n Grill</h1>
-      <p>Baker and Cafeteria</p>
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.subtitle }}</p>
+      <a href="{{ page.menu-image }}" data-fancybox class="js-menu">{{ page.menu }}</a>
+    </div>
+
+    <div class="social">
+      {% for social in page.social %}
+        <a target="_blank" href="{{ page.social-link[forloop.index0] }}"><img src="{{ page.social[forloop.index0] }}" alt=""></a>
+      {% endfor %}
     </div>
 
     <script src="{{ "/assets/js/jquery.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/slick.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/jquery.fancybox.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   </body>
 </html>
