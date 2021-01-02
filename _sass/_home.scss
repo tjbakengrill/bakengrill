@@ -44,12 +44,19 @@ body{
         background-size: 1000% 100%;        
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media (max-width: 767px){
+            font-size: 11vw;
+            margin-bottom: 10px;
+        }
     }
     p{
         text-transform: uppercase;
         margin: 0;
         font-size: 2em;
         color: #333;
+        @media (max-width: 767px){
+            font-size: 5vw;
+        }
     }
     a{
         padding: 10px 20px;
@@ -62,6 +69,11 @@ body{
         margin-top: 30px;
         transition: all ease .2s;
         text-decoration: none;
+        @media (max-width: 767px){
+            font-size: 16px;
+            background: #ef4f4f;
+            color: #fff;
+        }
         &:hover{
             background: #ef4f4f;
             color: #fff;
