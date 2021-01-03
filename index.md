@@ -1,5 +1,6 @@
 ---
 layout: default
+logo: /uploads/logo.png
 title: Bake n Grill
 subtitle: Bakery and Cafeteria
 image:

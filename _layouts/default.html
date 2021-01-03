@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ site.title }} - {{ page.subtitle }}</title>
-
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
       </style>
@@ -13,7 +14,6 @@
     
   </head>
   <body>
-    {{ content }}
 
     <div class="background">
       <div class="bgcarousel">
@@ -26,6 +26,7 @@
     </div>
 
     <div class="content">
+      <div class="logo"><img src="{{ page.logo }}" alt="Logo"></div>
       <h1>{{ page.title }}</h1>
       <p>{{ page.subtitle }}</p>
       <a href="{{ page.menu-image }}" data-fancybox class="js-menu">{{ page.menu }}</a>
