@@ -3,7 +3,7 @@ title: Bake n Grill
 permalink: "/menu"
 layout: menu
 logo: "/uploads/logo.png"
-subtitle: Bakery and Cafeteria
+subtitle: Our Menu
 menu:
 - Our Menu
 social:
