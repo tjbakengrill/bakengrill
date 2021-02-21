@@ -1,9 +1,9 @@
 ---
 title: Bake n Grill
+permalink: "/menu"
 layout: menu
 logo: "/uploads/logo.png"
 subtitle: Bakery and Cafeteria
-permalink: /menu
 menu:
 - Our Menu
 social:
