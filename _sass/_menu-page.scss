@@ -1,0 +1,39 @@
+.page-header{
+    width: 100%;
+    background: #b5838d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50px;
+        display: block;
+    }
+}
+
+.menu-page{
+    color: #343a40;
+    .row{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.menu-table{
+    font-family: 'Roboto', sans-serif;
+    table{
+        width: 100%;
+        tr td:last-child{
+            text-align: right;
+        }
+        td.s0{
+            font-weight: 700;
+            text-align: left !important;
+            padding-top: 15px;
+        }
+    }
+    .row-header-shim{
+        display: none;
+    }
+    
+}

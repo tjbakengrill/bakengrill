@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }} - {{ page.subtitle }}</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+      </style>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KHDM9FW');</script>
+    <!-- End Google Tag Manager -->
+    
+  </head>
+  <body class="inner-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDM9FW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <header class="page-header">
+      <img src="{{ page.logo }}" alt="Logo">
+    </header>
+
+    <div class="inner-content">
+
+      <h1>Our Menu</h1>
+
+      <div class="menu-page container">
+        <div class="row">
+          <div class="six columns">
+            <div class="menu-table"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="social">
+      {% for social in page.social %}
+        <a target="_blank" href="{{ page.social-link[forloop.index0] }}"><img src="{{ page.social[forloop.index0] }}" alt=""></a>
+      {% endfor %}
+    </div>
+
+    <script src="{{ "/assets/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/menu.js" | relative_url }}"></script>
+    
+  </body>
+</html>
